@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run face_detector_app.py
+web: gunicorn app:app
