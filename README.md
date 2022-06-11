@@ -1,6 +1,5 @@
-# Face-Mask-Detector
-Face Mask Detector using Flask, OpenCV and Fastai. Deployed on Heroku.
+# Face-Mask-Classification-With-Streamlit
 
-Live Demo: [Face Mask Detector](https://face-mask-detector.herokuapp.com/).
+Demo link:- https://streamlit-maskdetector.herokuapp.com
 
-Powered by [GeoVictoria](https://www.geovictoria.com).
+For more information:- [Read Blog](https://q-viper.github.io/2020/10/13/deploying-face-mask-classifier-on-heroku-deploy/)
