@@ -64,7 +64,7 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 st.write("""
-         #Crowd Face Mask Detector 
+         # Crowd Face Mask Detector 
          """
          )
 st.write("Detects and counts the number of face masks worn in a crowd")
