@@ -1,5 +1,7 @@
 # Mask Detector for Crowds
 
-Demo link:- https://maskedornot.herokuapp.com/
+![MarineGEO circle logo]([demo.jpg] "MarineGEO logo")
+
+Deployed at:- https://maskedornot.herokuapp.com/
 
 
