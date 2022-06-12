@@ -13,7 +13,7 @@ def model_loader(model_dir):
 dir = os.path.dirname(os.path.realpath(__file__))+"/"
 model=model_loader(model_dir=dir+"customCNN64.h5")
 face_cascade = cv2.CascadeClassifier(dir+'haarcascade_frontalface_default.xml')
-        
+      
 def classifier(image, model):
     shape=model.input_shape
     shape = shape[1:3]
@@ -55,12 +55,19 @@ def face_detector(image, face_cascade):
         result="Nothing found."
     return image, result
 
-
+st.set_page_config(page_title='Face Mask Detector')
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 st.write("""
-         # Face Mask Classifier Using Streamlit
+         #Crowd Face Mask Detector 
          """
          )
-st.write("A Simple Web App to do face mask classification.")
+st.write("Detects and counts the number of face masks worn in a crowd")
 file = st.file_uploader("Please upload an image file", type=["jpg", "png"])
 
 if file is None:
